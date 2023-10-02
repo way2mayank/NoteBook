@@ -1,0 +1,12 @@
+.btn-link {
+  text-decoration: none;
+  color: #007bff;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
