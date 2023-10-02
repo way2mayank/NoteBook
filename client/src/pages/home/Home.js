@@ -8,7 +8,7 @@ const Home = () => {
   const [result, setResult] = useState([]);
   let token = Cookies.get("token");
   const navigate = useNavigate();
-const URL = "http://localhost:8000"
+const URL = "https://backend-g654.onrender.com"
 
 
   useEffect(() => {

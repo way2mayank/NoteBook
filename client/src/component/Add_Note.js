@@ -13,7 +13,7 @@ const Add_Note = () => {
     e.preventDefault();
 
     let token = Cookies.get("token");
-    const URL = "http://localhost:8000"
+    const URL = "https://backend-g654.onrender.com"
     const res = await axios.post(
       `${URL}/api/v1/add_note`,
       {

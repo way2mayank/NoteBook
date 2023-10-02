@@ -7,7 +7,7 @@ import "./NoteDetails.css"
 const NoteDetail = () => {
   const { id } = useParams();
   const [note, setNote] = useState(null);
-  const URL = "http://localhost:8000"
+  const URL = "https://backend-g654.onrender.com"
 
   useEffect(() => {
     fetchNote();

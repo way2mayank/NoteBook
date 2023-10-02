@@ -7,7 +7,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const URL = 'http://localhost:8000'
+  const URL = 'https://backend-g654.onrender.com'
 
   const handleSubmit = async (e) => {
     e.preventDefault();

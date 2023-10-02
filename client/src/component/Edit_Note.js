@@ -8,7 +8,7 @@ const Edit_Note = () => {
   const [description, setDescription] = useState("");
   const params = useParams();
   const Navigate = useNavigate();
-  const URL = "http://localhost:8000"
+  const URL = "https://backend-g654.onrender.com"
   useEffect(() => {
     getNote();
   }, []);
