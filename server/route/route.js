@@ -12,6 +12,9 @@ import { authCheck } from "../auth/authentication.js";
 
 const router = express.Router(); // Fixed variable name
 
+router.get('/', (req,res)=>{
+  res.send("hello")
+})
 router.post("/register", register);
 router.post("/login", login);
 
