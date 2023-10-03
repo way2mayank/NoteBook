@@ -21,26 +21,30 @@ Runs the backend in the development mode.\
 
 ### deploy our backend project on render
 
-### Create a Render Account with github
+ step 1 : Create a Render Account with github
+ 
 Log in to your Render account.
 From your Render dashboard, click on the "Create" button in the top right corner.
 Choose "Web Service" from the dropdown menu.
 
-### fill the details 
+step 2 : fill the details 
+
 like: Name, Environment, BuildCommand, Start Command
 
-### Set Up Your Environment Variables
+step 3 : Set Up Your Environment Variables
+
 Add any necessary environment variables that your backend requires (e.g., database connection strings, API keys).
 It should be in key value pairs
 
-### Deploy Your Backend
-Once you've set up your service and configured it as needed, click the "Deploy Latest" button in your Render dashboard.
+step 4 : Deploy Your Backend
 
+Once you've set up your service and configured it as needed, click the "Deploy Latest" button in your Render dashboard.
 Render will start the deployment process. Once it's complete, your backend will be live and you'll be provided with a URL.
 
 ### Deploying Your Frontend on Netlify
 
 Step 1: Create an Account on Netlify
+
 Sign up for a Netlify account at https://app.netlify.com/signup.
 
 Step 2: Replace Localhost with Backend Deployment URL
