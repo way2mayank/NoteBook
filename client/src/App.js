@@ -4,13 +4,13 @@ import Register from "./pages/register/Register.js";
 import Home from "./pages/home/Home.js";
 import AddNote from "./component/Add_Note.js";
 import EditNote from "./component/Edit_Note.js";
-import Header from "./Header.js";
+// import Header from "./component/nav/header/Header.js";
 import NoteDetail from "./component/NoteDetail.js";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import "./Home.css";
 import axios from "axios";
+import Layout from "../../component/nav/layout/Layout";
 
 const Home = () => {
   const [result, setResult] = useState([]);
@@ -44,7 +45,7 @@ const URL = "https://backend-g654.onrender.com"
   };
 
   return (
-    <>
+    <Layout title="Home_Page">
       <Link to="/add_note" className="btn btn-primary">
         Add Note+
       </Link>
@@ -99,7 +100,7 @@ const URL = "https://backend-g654.onrender.com"
           )}
         </tbody>
       </table>
-    </>
+    </Layout>
   );
 };
 

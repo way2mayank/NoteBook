@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
+import Layout from "./nav/layout/Layout";
 
 const Add_Note = () => {
   const [title, setTitle] = useState("");
@@ -41,6 +42,7 @@ const Add_Note = () => {
   };
 
   return (
+    <Layout title="Add_Note">
     <section className="vh-100" style={{ backgroundColor: "#508bfc" }}>
       <div className="container py-5 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
@@ -86,6 +88,7 @@ const Add_Note = () => {
         </div>
       </div>
     </section>
+    </Layout>
   );
 };
 

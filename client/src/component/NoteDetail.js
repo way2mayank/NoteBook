@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
-import "./NoteDetails.css"
+import "./NoteDetails.css";
+import Layout from "./nav/layout/Layout";
 
 const NoteDetail = () => {
   const { id } = useParams();
   const [note, setNote] = useState(null);
-  const URL = "https://backend-g654.onrender.com"
+  const URL = "https://backend-g654.onrender.com";
 
   useEffect(() => {
     fetchNote();
@@ -28,7 +29,7 @@ const NoteDetail = () => {
   };
 
   return (
-    <div>
+    <Layout  title="Notes_Details">
       {note ? (
         <div
           className="d-flex justify-content-center align-items-center"
@@ -36,7 +37,7 @@ const NoteDetail = () => {
         >
           <div
             className="card "
-            style={{ minHeight: "300px", minWidth: "300px" , maxWidth:"600px"}}
+            style={{ minHeight: "300px", minWidth: "300px", maxWidth: "600px" }}
           >
             <div className="card-body">
               <h5 className="card-title">{note.title}</h5>
@@ -48,7 +49,8 @@ const NoteDetail = () => {
       ) : (
         <div>Loading...</div>
       )}
-    </div>
+    </Layout>
+
   );
 };
 
